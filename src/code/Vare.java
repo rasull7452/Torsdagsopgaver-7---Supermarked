@@ -1,21 +1,31 @@
 package code;
 
 public class Vare {
-    private int id;
-    private String name;
-    private int lastPriceChange;
-    private int price;
-    private int content;
-    private String unit;
+    private String ean;
+    private String navn;
+    private double pris;
+    private boolean tilbud;
 
-    public Vare(int id, String name, int lastPriceChange, int price, int content, String unit){
-        this.id = id;
-        this.name = name;
-        this.lastPriceChange = lastPriceChange;
-        this.price = price;
-        this.content = content;
-        this.unit = unit;
-
+    public Vare(String ean, String navn, double pris, boolean tilbud) {
+        this.ean = ean;
+        this.navn = navn;
+        this.pris = pris;
+        this.tilbud = tilbud;
     }
 
+    public String getEan() {
+        return ean;
+    }
+
+    public String getNavn() {
+        return navn;
+    }
+
+    public double getPris() {
+        return pris;
+    }
+
+    public boolean isTilbud() {
+        return tilbud;
+    }
 }
